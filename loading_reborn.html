@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pantalla de Carga de GMod</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .loading-bar {
+            width: 100%;
+            max-width: 600px;
+            height: 20px;
+            background-color: #444;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px auto;
+        }
+        .loading-bar-inner {
+            width: 0;
+            height: 100%;
+            background-color: #76c7c0;
+            animation: loading 10s linear infinite;
+        }
+        @keyframes loading {
+            0% { width: 0; }
+            100% { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a Nuestro Servidor de Garry's Mod</h1>
+        <p>Cargando, por favor espere...</p>
+        <div class="loading-bar">
+            <div class="loading-bar-inner"></div>
+        </div>
+        <p>Visita nuestro sitio web: <a href="http://tu-sitio-web.com" target="_blank">tu-sitio-web.com</a></p>
+    </div>
+</body>
+</html>
